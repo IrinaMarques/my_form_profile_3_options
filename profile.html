@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang='pt'>
+<head>
+	<meta charset="utf-8">
+	<title>Profile 1</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+	<!-- CDN PARA FONT AWESOME -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"> 
+
+	<!-- CDN PARA MATERIAL ICONS -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body class="profile-page">
+	
+	<div class='container'>
+		<div class='row'>
+			<div class='col-sm-8 col-sm-offset-2'>
+				<div class='profiler-container'>
+					<div class='panel profiler-panel' data-color='orange' id='profiler'>
+					
+						<div class='panel-heading text-center'>
+							<h3 class='panel-title'>Cria o teu perfil</h3>
+							<p class='sub-title'>Permite-nos saber um pouco sobre ti.</p>
+						</div> <!-- panel-heading -->
+						<div class='panel-navigation'>
+							<div class='pro-circle'>
+								<div class='pro-bar' role='barra de progresso' aria-valuenow='1' aria-valuemin='1' aria-valuemax='3' style='width:16.6667%'></div>
+							</div>
+						<ul class='nav nav-pills'>
+							<li class='active' style='width: 33.3333%;'>
+								<a href="#about" id="about-tab">
+									<div class='icon-circle'>
+										<span class='fa fa-user'></span>
+									</div>
+									<span class='text'>About</span>
+								</a>
+							</li>
+							<li style='width: 33.3333%;'>
+								<a href="#myaccount" id="myaccount-tab">
+									<div class='icon-circle'>
+										<span class='fa fa-wrench'></span>
+									</div>
+									<span class='text'>Work</span>
+								</a>
+							</li>
+							<li style='width: 33.3333%;'>
+								<a href="#address" id="address-tab">
+									<div class='icon-circle'>
+										<span class='fa fa-home'></span>
+									</div>
+									<span class='text'>Address</span>
+								</a>
+							</li>
+						</ul>
+						</div> <!-- panel-navigation -->
+						<div class='tab-content'>
+							<div class='tab-pane active' id='about'>
+								
+								<div class='row'>
+									<form action method novalidate='novalidate'>
+										<h5 class='info'>Informação acerca de si....</h5>
+										<div class='col-sm-4 col-sm-offset-1'>
+											<div class='picture-container'>
+												<div class='picture'>
+													<img src='img/avatar.png' class='picture-src img-responsive' id='profiler-picturepreview' title=''>
+													<input type="file" id="profiler-picture">
+												</div>
+												<h6 class='text-uppercase'><strong>Choose Picture</strong></h6>
+											</div>
+										</div>
+										<div class='col-sm-6'>
+											<div class='form-group'>
+												<label>
+													Nome
+													<small>(Obrigat&oacute;rio)</small>
+												</label>
+												<input type="text" name="firstname" class='form-control' placeholder="Nome" aria-required='true' aria-invalid='false'>
+												<label id='firstname-error' class='error' for='firstname' style='display:none;'></label>
+											</div>
+											<div>
+												<label>
+													Apelido
+													<small>(Obrigat&oacute;rio)</small>
+												</label>
+												<input type="text" name="lastname" class='form-control' placeholder="Apelido" aria-required='true' aria-invalid='false'>
+												<label id='lastname-error' class='error' for='lastname' style='display:none;'></label>
+											</div>
+										</div>
+										<div class='col-sm-10 col-sm-offset-1'>
+											<div class='form-group'>
+												<label>
+													Email
+													<small>(Obrigat&oacute;rio)</small>
+												</label>
+												<input type="email" name="email" class='form-control' placeholder="email@algo.com" aria-required='true' aria-invalid='false'>
+												<label id='email-error' class='error' for='email' style='display:none;'></label>
+											</div>
+										</div>
+									</form>
+								</div>
+								
+							</div>
+							<div class='tab-pane' id='myaccount'>
+								<h5 class='info'>Sobre que assunto pertende receber a newsletter? </h5>
+								<div class='container-fluid'>	
+									<div class='row'>
+										<div class='col-sm-4'>
+											<div class='row tbplus'>
+												<div class='col-sm-2 tb'>
+													<input type="checkbox" name="jobb" value='Bares' checked="checked">
+												</div>
+												<div class='col-sm-2 tb'>
+													<span class='fa fa-glass'></span>
+												</div>
+												<div class='col-sm-8 tb'>
+													<p>Bares</p>
+												</div>
+											</div>
+										</div>
+										<div class='col-sm-4'>
+											<div class='row tbplus'>
+												<div class='col-sm-2 tb'>
+													<input type="checkbox" name="jobb" value='Resturantes' checked="checked">
+												</div>
+												<div class='col-sm-2 tb'>
+													<span class='fa fa-cutlery'></span>
+												</div>
+												<div class='col-sm-8 tb'>
+													<p>Restaurantes</p>
+												</div>
+											</div>
+										</div>
+										<div class='col-sm-4'>
+											<div class='row tbplus'>
+												<div class='col-sm-2 tb'>
+													<input type="checkbox" name="jobb" value='Monumentos' checked="checked">
+												</div>
+												<div class='col-sm-2 tb'>
+													<span class='fa fa-university'></span>
+												</div>
+												<div class='col-sm-8 tb'>
+													<p>Monumentos</p>
+												</div>
+											</div>
+										</div>	
+									</div> 
+									<div class='row'>
+										<div class='col-sm-4'>
+											<div class='row tbplus'>
+												<div class='col-sm-2 tb'>
+													<input type="checkbox" name="jobb" value='Hospitais' checked="checked">
+												</div>
+												<div class='col-sm-2 tb'>
+													<span class='fa fa-h-square'></span>
+												</div>
+												<div class='col-sm-8 tb'>
+													<p>Hospitais</p>
+												</div>
+											</div>
+										</div>
+										<div class='col-sm-4'>
+											<div class='row tbplus'>
+												<div class='col-sm-2 tb'>
+													<input type="checkbox" name="jobb" value='Parques' checked="checked">
+												</div>
+												<div class='col-sm-2 tb'>
+													<span class='fa fa-tree'></span>
+												</div>
+												<div class='col-sm-8 tb'>
+													<p>Parques</p>
+												</div>
+											</div>
+										</div>
+										<div class='col-sm-4'>
+											<div class='row tbplus'>
+												<div class='col-sm-2 tb'>
+													<input type="checkbox" name="jobb" value='Alojamento' checked="checked">
+												</div>
+												<div class='col-sm-2 tb'>
+													<span class='fa fa-bed'></span>
+												</div>
+												<div class='col-sm-8 tb'>
+													<p>Alojamento</p>
+												</div>
+											</div>
+										</div>
+									</div> 
+									<div class='row'>
+										<div class='col-sm-4'>
+											<div class='row tbplus'>
+												<div class='col-sm-2 tb'>
+													<input type="checkbox" name="jobb" value='Miradouros' checked="checked">
+												</div>
+												<div class='col-sm-2 tb'>
+													<span class='fa fa-binoculars'></span>
+												</div>
+												<div class='col-sm-8 tb'>
+													<p>Miradouros</p>
+												</div>
+											</div>
+										</div>
+										<div class='col-sm-4'>
+											<div class='row tbplus'>
+												<div class='col-sm-2 tb'>
+													<input type="checkbox" name="jobb" value='Lojas' checked="checked">
+												</div>
+												<div class='col-sm-2 tb'>
+													<span class='fa fa-cart-plus'></span>
+												</div>
+												<div class='col-sm-8 tb'>
+													<p>Lojas</p>
+												</div>
+											</div>
+										</div>
+										<div class='col-sm-4'>
+											<div class='row tbplus'>
+												<div class='col-sm-2 tb'>
+													<input type="checkbox" name="jobb" value='Taxi' checked="checked">
+												</div>
+												<div class='col-sm-2 tb'>
+													<span class='fa fa-taxi'></span>
+												</div>
+												<div class='col-sm-8 tb'>
+													<p>T&aacute;xis</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class='row'>
+										<div class='col-sm-4'>
+											<div class='row tbplus'>
+												<div class='col-sm-2 tb'>
+													<input type="checkbox" name="jobb" value='Metro' checked="checked">
+												</div>
+												<div class='col-sm-2 tb'>
+													<span class='fa fa-subway'></span>
+												</div>
+												<div class='col-sm-8 tb'>
+													<p>Metro</p>
+												</div>
+											</div>
+										</div>
+										<div class='col-sm-4'>
+											<div class='row tbplus'>
+												<div class='col-sm-2 tb'>
+													<input type="checkbox" name="jobb" value='Comboio' checked="checked">
+												</div>
+												<div class='col-sm-2 tb'>
+													<span class='fa fa-train'></span>
+												</div>
+												<div class='col-sm-8 tb'>
+													<p>Comboio</p>
+												</div>
+											</div>
+										</div>
+										<div class='col-sm-4'>
+											<div class='row tbplus'>
+												<div class='col-sm-2 tb'>
+													<input type="checkbox" name="jobb" value='Bus' checked="checked">
+												</div>
+												<div class='col-sm-2 tb'>
+													<span class='fa fa-bus'></span>
+												</div>
+												<div class='col-sm-8 tb'>
+													<p>Bus</p>
+												</div>
+											</div>
+										</div>
+									</div> 
+								</div>
+							</div> <!-- tab-pane -->
+							<div class='tab-pane' id='address'>
+								<div class='row'>
+									<div class='col-sm-12'>
+										<h5 class='info'>Diz-nos de onde &eacute;s</h5>
+									</div> <!-- col 12 -->
+									<div class='col-sm-7 col-sm-offset-1'>
+										<div class='form-group'>
+											<label>Nome da rua</label>
+											<input type="text" class="form-control" placeholder="Rua...">
+										</div>
+									</div> <!-- col 7 -->
+									<div class='col-sm-3'>
+										<div class="form-group">
+											<label>N&uacute;mero</label>
+											<input type="text" class="form-control" placeholder="00">
+										</div>
+									</div> <!-- col 3 -->
+									<div class='col-sm-5 col-sm-offset-1'>
+										<div class="form-group">
+											<label>Cidade</label>
+											<input type="text" class="form-control" placeholder="Cidade">
+										</div>
+									</div> <!-- col 5 off 1 -->
+									<div class='col-sm-5'>
+										<div class="form-group">
+											<label>Pais</label>
+											<input type="text" class="form-control" placeholder="..."> <!-- FALAR COM MARCO -->
+										</div>
+									</div> <!-- col 5 -->
+								</div> <!-- row -->
+							</div> <!-- tab-pane -->
+						</div> <!-- tab-content -->
+						<div class='panel-footer'>
+							<div class='pull-right'>
+								<input type="button" class="btn btn-next btn-fill btn-warning btn-wd" name='next' value='Next'>
+								<input type="button" class="btn btn-finish btn-fill btn-warning btn-wd" name='finish' value='Finish' style="display: none;">
+							</div>
+							<div class='pull-left'>
+								<input type="button" class="btn btn-previous btn-default btn-wd" name='previous' value='Previous'>
+							</div>
+							<div class='pull-clearfix'></div>
+						</div><!-- panel-footer-->
+					
+					</div> <!-- close the card -->
+				</div> <!-- close profile-container -->
+			</div> <!-- close the col -->
+		</div> <!-- close row -->
+	</div> <!-- close container -->
+
+	<!-- 4.Load jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- 3.Latest compiled and minified JavaScript - this will load the javascript file -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js'></script>
+	<script>
+		$(document).ready(function(){
+			var tabs = [{
+				tab:'about-tab',
+				content: 'about',
+				validate: {
+					rules: {
+						firstname: {
+							required: true,
+							minlength: 3
+						},
+						lastname: {
+							required: true,
+							minlength: 3
+						},
+							email: {
+							required: true
+						}
+					},
+        		}
+			}, {
+				tab:'myaccount-tab',
+				content: 'myaccount'
+			}, {
+				tab:'address-tab',
+				content: 'address'
+			}];
+			var activeIndex = 0;
+			var $proBar = $('.pro-bar')
+			var $btnNext = $('.btn-next');
+			var $btnFinish = $('.btn-finish');
+			var $btnPrevious = $('.btn-previous');
+
+        	var validate = function(){
+        		var item = tabs[activeIndex];
+		
+				if(item.validate) {
+					var $valid = $('#' + item.content + ' form').valid();
+			       	if(!$valid) {
+	            		item.$validator.focusInvalid();
+	            		$('#' + item.tab + ' .icon-circle').removeClass('checked');
+	            		return false;
+	            	}
+				};
+
+				$('#' + item.tab + ' .icon-circle').addClass('checked');
+        		return true;
+        	};
+
+        	var hideTab = function(item) {
+				item.isActive = false;
+				$(item.tabEl).parent().removeClass('active');
+				$(item.tabContentEl).hide();
+        	};
+
+        	var showTab = function(item) {
+				item.isActive = true;
+				$(item.tabEl).parent().addClass('active');
+				$(item.tabContentEl).show();
+				$proBar.width($(item.tabEl).parent().position().left + 100)
+        	};
+
+        	var controlBtns = function(){
+        		if(activeIndex >= tabs.length - 1){
+					$btnNext.hide();
+					$btnFinish.show();
+					$btnPrevious.show();
+        		}else{
+					$btnNext.show();
+					$btnFinish.hide();
+					$btnPrevious.show();
+        		};
+        	}
+
+        	var onTabClick = function(evt) {
+				tabs.map(function(item, index){
+					if(!validate()) return;
+
+					if(item.tab === evt.currentTarget.id) {
+						activeIndex = index;
+						showTab(item);
+						return;
+					}
+
+					hideTab(item);
+        		});
+
+        		controlBtns();
+        	};
+
+        	var nextTab = function(evt) {
+				tabs.map(function(item, index){
+					if(!validate()) return;
+
+					if(item.isActive) { 
+						activeIndex = (index + 1 > tabs.length - 1 ? tabs.length - 1 : index + 1) ;
+					};
+
+					hideTab(item);
+        		});
+				showTab(tabs[activeIndex]);
+        	};
+
+        	var previousTab = function(evt) {
+				tabs.map(function(item, index){
+					if(!validate()) return;
+
+					if(item.isActive) { 
+						activeIndex = (index - 1 < 0 ? 0 : index - 1) ;
+					};
+
+					hideTab(item);
+        		});
+				showTab(tabs[activeIndex]);
+        	};
+
+        	//init tabs
+        	(function() {
+        		tabs = tabs.map(function(item){
+        			item.tabEl = document.getElementById(item.tab);
+        			item.tabContentEl = document.getElementById(item.content);
+        			if($(item.tabEl).parent().hasClass('active')){
+        				item.isActive = true;
+        			};
+        			if(item.validate){
+						item.$validator = $('#' + item.content + ' form').validate(item.validate);
+        			}
+					$(item.tabEl).on('click', onTabClick);
+        			return item;
+        		});
+        		console.log(tabs)
+        	})()
+
+			$btnNext.on('click', function(evt){
+				nextTab();
+				controlBtns();
+				console.log('next')
+			});
+			$btnFinish.on('click', function(evt){
+				console.log('finish')
+			});
+			$btnPrevious.on('click', function(evt){
+				previousTab();
+				controlBtns();
+				console.log('previous')
+			});
+	
+		});
+	</script>	
+
+</body>
+</html>
+
+
+
+
+
+
